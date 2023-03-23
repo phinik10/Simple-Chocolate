@@ -12,17 +12,31 @@
     --color--brend:#FD9222;
     --color--hover-brend:#FCF1E0;
     --color--background-card:1E1823;
-
+    --time-transition:cubic-bezier(0.4, 0, 0.2, 1);
   }
+  /* Візуально схований контент */
+.visually-hidden{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
   body{
     margin: 0;
-    font-family: Monserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 0,875rem;
+    font-size: 0.875rem;
     color: var(--color--black-text);
     background-color: #E2E2E2;
-
   }
+
   .conteiner{
     max-width: 1200px;
     width: 100%;
@@ -44,3 +58,17 @@
         width: 1166px;
     }
   }
+
+.section{
+  padding-top: 72px;
+}
+@media screen and (min-width:768px) {
+  .section{
+    padding:100px 0;
+  }
+}
+@media screen and (min-width:1200px) {
+  .section{
+    padding:128px 0;
+  }
+}
