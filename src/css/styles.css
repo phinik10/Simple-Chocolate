@@ -4,8 +4,23 @@
   | default @import url()
   |============================
 */
-@import url('./reset.css');
-@import url('./base_style.css');
-@import url('./header.css');
+/* base */
+@import url('./base/reset.css');
+@import url('./base/base_style.css');
+/* covponents */
+@import url('./components/vh.css');
+/* section */
+@import url('./loyout/header.css');
+@import url('./loyout/hero.css');
+@import url('./loyout/advantages.css');
+@import url('./loyout/components.css');
+@import url('./loyout/made.css');
+@import url('./loyout/products.css');
+@import url('./loyout/sellers.css');
+@import url('./loyout/reviews.css');
+@import url('./loyout/subscribe.css');
+@import url('./loyout/footer.css');
+
+
 /* Підключати свій стиль: через @import url('шлях до файлу'); */
 
