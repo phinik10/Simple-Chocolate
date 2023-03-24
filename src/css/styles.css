@@ -5,6 +5,7 @@
   |============================
 */
 /* base */
+@import url('./base/fonts.css');
 @import url('./base/reset.css');
 @import url('./base/base_style.css');
 /* covponents */
