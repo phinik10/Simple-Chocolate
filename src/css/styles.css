@@ -21,6 +21,13 @@
 @import url('./loyout/subscribe.css');
 @import url('./loyout/footer.css');
 
+/* modal */
+@import url('./loyout/modal/buy.css');
+@import url('./loyout/modal/explore.css');
+@import url('./loyout/modal/feedback.css');
+@import url('./loyout/modal/leave.css');
+@import url('./loyout/modal/thank.css');
+
 
 /* Підключати свій стиль: через @import url('шлях до файлу'); */
 
