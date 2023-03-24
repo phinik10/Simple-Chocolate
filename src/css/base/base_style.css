@@ -1,11 +1,11 @@
 :root {
     --color--white-text:#FFFFFF;
-    --color--background:#FAFAFA;
+    --color--bg:#FAFAFA;
     --color--black-text:#111111;
     --color--gray-text: rgba(17,17,17,0.7);
     --color--brend:#FD9222;
     --color--hover-brend:#FCF1E0;
-    --color--background-card:1E1823;
+    --color--bg-card:#1E1823;
     --time-transition:cubic-bezier(0.4, 0, 0.2, 1);
   }
 
