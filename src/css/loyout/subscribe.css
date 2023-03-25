@@ -1,0 +1,34 @@
+.subscribe{
+    text-align: center;
+}
+.subscribe-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    padding: 62px 24px;
+}
+.subscribe-title{
+    color: var(--color--white-text);
+    font-weight: 600;
+    font-size: 1.25rem;
+    max-width: 18.1875rem;
+}
+.subscribe-text{
+    max-width: 20.375rem;
+    color: var(--color--white-text);
+}
+._ibg{
+    position: relative;
+    z-index: -1;   
+}
+._ibg.img{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    object-fit: cover;
+}
