@@ -129,3 +129,15 @@ ul {
   background-color: var(--white);
 }
 
+.scroll-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+  align-items: center;
+  flex-direction: row;
+  padding: 8px 24px;
+  gap: 14px;
+}
