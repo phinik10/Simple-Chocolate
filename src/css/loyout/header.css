@@ -1,9 +1,16 @@
+.header {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
 .container-header {
   display: flex;
   align-items: center;
-  width: 1136px;
-  padding-left: 32px;
-  padding-right: 32px;
+  justify-content: space-between;
+  max-width: 1136px;
+
+  padding-top: 24px;
+  padding-bottom: 32px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -14,34 +21,39 @@
 
 .logo-simply {
   font-style: italic;
+  margin-right: 8px;
 }
 
 .nav {
   display: flex;
   gap: 24px;
-  margin-left: 188px;
+  /* margin-left: 188px; */
 }
 
 .logo {
   display: flex;
+  align-items: center;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.11;
   letter-spacing: -0.03em;
-  padding-top: 24px;
-  padding-bottom: 32px;
 }
 
 .nav-social-list {
   display: flex;
+  gap: 18px;
+}
+
+li {
+  display: flex;
+  align-items: center;
 }
 
 .nav-link {
   display: block;
   font-weight: 500;
   letter-spacing: -0.02em;
-  padding-top: 24px;
-  padding-bottom: 32px;
+  line-height: 16px;
+  font-size: 14px;
 }
 
 .nav-social {
@@ -49,6 +61,7 @@
 }
 
 .icon {
+  display: block;
   width: 24px;
   height: 24px;
 }
