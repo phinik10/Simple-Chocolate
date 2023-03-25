@@ -79,7 +79,7 @@
   background-color: var(--color--brend);
 }
 
-/* Стиль для заголовків. Оранж-акцент - це .color-title */
+/* Стиль для заголовків. Оранж-акцент - це селектор .color-title */
 
 .section-title {
   font-weight: 600;
