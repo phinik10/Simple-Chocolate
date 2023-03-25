@@ -1,4 +1,7 @@
 .subscribe{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
     text-align: center;
 }
 .subscribe-body{
@@ -38,7 +41,6 @@
         max-width: 29.1875rem;
     }
 }
-
 ._ibg{
     position: relative;
     z-index: -1;   
