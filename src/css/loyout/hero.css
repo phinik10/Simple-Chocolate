@@ -118,7 +118,7 @@ ul {
 }
 
 .made-btn {
-  background-color: var(--dark-purple);
+  background-color: transparent;
   border-color: var(--white);
   border-radius: 100px;
 }
