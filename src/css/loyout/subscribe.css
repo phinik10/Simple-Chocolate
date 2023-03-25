@@ -7,6 +7,7 @@
     align-items: center;
     gap: 24px;
 
+    height: 370px;
     padding: 62px 24px;
 }
 .subscribe-title{
@@ -14,11 +15,30 @@
     font-weight: 600;
     font-size: 1.25rem;
     max-width: 18.1875rem;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+    text-transform: uppercase;
 }
 .subscribe-text{
     max-width: 20.375rem;
+    letter-spacing: -0.02em;
+    line-height: 1.2857em;
     color: var(--color--white-text);
 }
+@media screen and (min-width:768px){
+    .subscribe-body{
+        padding: 72px 0;
+    }
+    .subscribe-title{
+        max-width: 23.625rem;
+        font-size: 1.5rem;
+        line-height: 1.16;
+    }
+    .subscribe-text{
+        max-width: 29.1875rem;
+    }
+}
+
 ._ibg{
     position: relative;
     z-index: -1;   
