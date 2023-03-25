@@ -140,4 +140,5 @@ ul {
   flex-direction: row;
   padding: 8px 24px;
   gap: 14px;
+  color: var(--white);
 }
