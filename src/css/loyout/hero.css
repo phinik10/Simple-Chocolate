@@ -141,4 +141,18 @@ ul {
   background-color: var(--white);
 }
 
+.scroll-btn {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+  color: var(--white);
+  background-color: transparent;
+  border: none;
+  gap: 14px;
+  
+  outline: none;
+  
 
+}
