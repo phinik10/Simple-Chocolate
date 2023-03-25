@@ -31,8 +31,9 @@ ul {
 
 @media (min-width: 768px) {
     .hero {
+      background-image: url(../);
         background-size: cover;
-        background-position:  70% 30% ;
+        background-position:  center ;
         max-width: 704px;
         padding-top: 671px;
         padding-bottom: 40px;
