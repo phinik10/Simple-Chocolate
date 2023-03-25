@@ -50,7 +50,7 @@ ul {
     }
 }
 
-@media (min-width: 1158px) {
+@media (min-width: 1200px) {
     .hero {
         background-position: center;
         padding-top: 381px;
@@ -61,7 +61,7 @@ ul {
     }
 }
 
-@media (min-width: 1158px) and (min-device-pixel-ratio: 2),
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2),
 (min-width: 1158px) and (-webkit-min-device-pixel-ratio: 2),
 (min-width: 1158px) and (min-resolution: 192dpi),
 (min-width: 1158px) and (min-resolution: 2dppx)  {
@@ -86,7 +86,7 @@ ul {
   text-align: left;
 }
 
-@media (min-width: 768px) and (max-width: 1158px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .hero-title {
     font-size: 28px;
     margin-left: 40px;
