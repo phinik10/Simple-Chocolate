@@ -172,3 +172,9 @@ ul {
   stroke: #FD9222;
 }
 
+.scroll-btn:hover,
+.scroll-btn:focus {
+  color: #FD9222;
+  fill: #FD9222;
+  stroke: #FFFFFF;
+}
