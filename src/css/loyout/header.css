@@ -38,6 +38,11 @@
   letter-spacing: -0.03em;
 }
 
+.main-icon {
+  fill: white;
+  stroke: orange;
+}
+
 .nav-social-list {
   display: flex;
   gap: 18px;
@@ -64,4 +69,9 @@ li {
   display: block;
   width: 24px;
   height: 24px;
+}
+
+.social-icon {
+  fill: white;
+  stroke: black;
 }
