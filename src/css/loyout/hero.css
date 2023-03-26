@@ -97,7 +97,6 @@ ul {
 .list-button {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
   gap: 14px;
   margin-left: 20px;
   
@@ -129,7 +128,7 @@ ul {
 }
 
 .made-btn {
-  background-color: var(--dark-purple);
+  background-color: transparent;
   border-color: var(--white);
   border-radius: 100px;
 }
@@ -163,3 +162,4 @@ ul {
   fill: var(--white);
   stroke: #FD9222;
 }
+
