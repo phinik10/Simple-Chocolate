@@ -109,6 +109,7 @@ ul {
 .list-button {
   display: flex;
   flex-wrap: wrap;
+  row-gap: 32px;
 }
 
 .hero-btn {
