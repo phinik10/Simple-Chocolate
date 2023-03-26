@@ -59,7 +59,9 @@
     color: rgba(64, 64, 64, 0.3);
 }
 
-
+.review-number::placeholder {
+    padding-left: 90px;
+}
 
 .ukr-number {
     position: absolute;
