@@ -1,7 +1,12 @@
 .subscribe{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
     text-align: center;
 }
 .subscribe-body{
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,10 +43,8 @@
         max-width: 29.1875rem;
     }
 }
-
 ._ibg{
-    position: relative;
-    z-index: -1;   
+    position: relative; 
 }
 ._ibg.img{
     position: absolute;
@@ -52,3 +55,4 @@
     left:0;
     object-fit: cover;
 }
+
