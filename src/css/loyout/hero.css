@@ -16,13 +16,16 @@ ul {
 }
 
 .hero {
+  background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/hero/chocolate-mobile.jpg);
   background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(./images/hero/chocolate-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center ;
+  background-position: center ;
   max-width: 335px;
   padding-top: 395px;
-  padding-bottom: 81px;
+  padding-bottom: 21px;
+  padding-left: 20px;
   left: 0;
   top: 0;
   border-radius: 20px;
@@ -34,8 +37,10 @@ ul {
         background-size: cover;
         background-position: center ;
         max-width: 704px;
+        padding-left: 40px;
         padding-top: 671px;
         padding-bottom: 40px;
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/hero/chocolate-tablet.jpg);
         background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(./images/hero/chocolate-tablet.jpg);
     }
 }
@@ -47,11 +52,13 @@ ul {
     .hero {
        
         background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/hero/chocolate-tablet@2x.jpg);
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/hero/chocolate-tablet@2x.jpg);
     }
 }
 
 @media (min-width: 1158px) {
     .hero {
+        background-position: center;
         background-position: center;
         padding-top: 381px;
         padding-bottom: 40px;
@@ -72,6 +79,17 @@ ul {
 }
 
 
+@media (min-width: 1158px) and (min-device-pixel-ratio: 2),
+(min-width: 1158px) and (-webkit-min-device-pixel-ratio: 2),
+(min-width: 1158px) and (min-resolution: 192dpi),
+(min-width: 1158px) and (min-resolution: 2dppx)  {
+    .hero {
+       
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/hero/simply-chocolate@2x.jpg);
+    }
+}
+
+
 .hero-title {
   font-weight: 500;
   font-size: 20px;
@@ -80,27 +98,35 @@ ul {
   color: var(--white);
   width: 100%;
   max-width: 299px;
-  margin-left: 20px;
   margin-right: auto;
   margin-bottom: 32px;
   text-align: left;
 }
 
-@media (min-width: 768px) and (max-width: 1158px) {
+@media (min-width: 768px) {
   .hero-title {
     font-size: 28px;
-    margin-left: 40px;
     max-width: 484px;
+  }
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+}
+
+@media (min-width: 768px) {
+  .list-button {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 .list-button {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 14px;
-  margin-left: 20px;
-  
+  flex-wrap: wrap;
+  row-gap: 32px;
 }
 
 .hero-btn {
@@ -129,7 +155,7 @@ ul {
 }
 
 .made-btn {
-  background-color: var(--dark-purple);
+  background-color: transparent;
   border-color: var(--white);
   border-radius: 100px;
 }
@@ -153,7 +179,8 @@ ul {
   border: none;
   gap: 14px;
   outline: none;
-
+  padding: 0;
+  cursor: pointer;
 }
 
 .scroll-icon {
@@ -161,4 +188,11 @@ ul {
   height: 38px;
   fill: var(--white);
   stroke: #FD9222;
+}
+
+.scroll-btn:hover,
+.scroll-btn:focus {
+  color: #FD9222;
+  fill: #FD9222;
+  stroke: #FFFFFF;
 }
