@@ -1,11 +1,12 @@
 :root {
     --color--white-text:#FFFFFF;
-    --color--background:#FAFAFA;
+    --color--bg:#FAFAFA;
     --color--black-text:#111111;
     --color--gray-text: rgba(17,17,17,0.7);
     --color--brend:#FD9222;
     --color--hover-brend:#FCF1E0;
-    --color--background-card:1E1823;
+    --color--bg-card:#1E1823;
+    --color--body:#E2E2E2;
     --time-transition:cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -15,7 +16,7 @@
     font-weight: 400;
     font-size: 0.875rem;
     color: var(--color--black-text);
-    background-color: #E2E2E2;
+    background-color: var(--color--body);
   }
 
   .conteiner{
@@ -26,7 +27,7 @@
   }
   @media screen and (min-width:375px) {
     .conteiner{
-      min-width:375px;
+      max-width:375px;
     }
   }
   @media screen and (min-width:768px) {
