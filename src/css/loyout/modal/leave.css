@@ -59,6 +59,28 @@
     letter-spacing: -0.02em;
     color: rgba(64, 64, 64, 0.3);
 }
+
+
+ .review-number::placeholder {
+   
+}
+
+.ukr-number {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 20px 0px 0px;
+    gap: 18px;
+    
+}
+
+.number-icon {
+    width: 32px;
+    height: 32px;
+}
+
 .textarea-review {
   resize: none;
   width: 100%;
