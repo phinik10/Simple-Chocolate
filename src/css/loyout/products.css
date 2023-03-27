@@ -1,12 +1,12 @@
 .produckts {
     padding: 72px 20px;
+    position: relative;
 }
 
 
 .produckts-title {
-    font-family: "Montserrat";
     font-weight: 600;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1.2;
     letter-spacing: -0.03em;
     text-align: center;
@@ -17,14 +17,15 @@
     color: var(--color--brend);
 }
 .produckts-list {
+    position: relative;
     display: flex;
     gap: 18px;
     justify-content: center;
-   
-   
+    min-width: 0;
+    
 }
 .produckts-img {
-   
+    width: 100%;
     max-width:  335px;
     height: 364px;
     box-sizing: border-box;
@@ -35,8 +36,6 @@
 
 .produckts-photo{
     padding-top: 32px;
-   
-
 }
 .products-block {
 width: 100%;
@@ -52,7 +51,6 @@ margin-bottom: 18px;
 }
 .products-name{
 white-space: nowrap;
-font-family: "Montserrat";
 font-weight: 600;
 font-size: 18px;
 line-height: 1.33;
@@ -61,7 +59,6 @@ color: var(--color--black-text);
 }
 .produckts-description{
 white-space: nowrap;
-font-family: "Montserrat";
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
@@ -77,7 +74,6 @@ text-align: center;
 margin-left: 68px;
 
 
-
 width: 94px;
 height: 33px;
 
@@ -85,39 +81,45 @@ background-color: var(--color--bg);
 border: 1px solid rgba(17, 17, 17, 0.1);
 border-radius: 100px;
 
-font-family: "Montserrat";
 font-weight: 600;
 font-size: 14px;
 line-height: 17px;
 color: var(--color--black-text);
 }
+
 .swiper {
-width: 335px;
+    width: 335px;
+
 }   
-  @media screen and (min-width: 1200px) {
-    .swiper {
-        width: 1136px;
-      }
-  }
 @media screen and (min-width: 768px) {
     .swiper {
         width: 736px;
     }
 }
+@media screen and (min-width: 1200px) {
+    .swiper {
+        width: 1136px;
+      }
+  }
+  .swiper-slide{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 .swiper-pagination-bullet {
     background-color: var(--color--gray-text);
     width: 13px;
     height: 13px;
  
 }
-
-.swiper-pagination {
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
     position: absolute;
-    
+    bottom: 0;
 }
 .swiper-pagination-bullet-active {
     width: 28px;
     height: 13px;
-    background-color: var(--color--brend);
-   
+    background-color: var(--color--brend); 
 }
