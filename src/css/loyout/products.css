@@ -20,10 +20,11 @@
     display: flex;
     gap: 18px;
     justify-content: center;
-    
+   
    
 }
 .produckts-img {
+   
     max-width:  335px;
     height: 364px;
     box-sizing: border-box;
@@ -31,13 +32,15 @@
     border-radius: 15px;
     background-color: var(--color--white-text);
 }
+
 .produckts-photo{
     padding-top: 32px;
    
 
 }
 .products-block {
-max-width: 88px;
+width: 100%;
+width: 88px;
 height: 40px;
 display: flex;
 flex-direction: column;
@@ -48,6 +51,7 @@ margin-bottom: 18px;
 
 }
 .products-name{
+white-space: nowrap;
 font-family: "Montserrat";
 font-weight: 600;
 font-size: 18px;
@@ -56,14 +60,15 @@ text-align: center;
 color: var(--color--black-text);
 }
 .produckts-description{
- 
-width: 100%;
+white-space: nowrap;
 font-family: "Montserrat";
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
     text-align: center;
     color: var(--color--gray-text);
+
+    
 }
 .produckts-btn {
 display: block;
@@ -87,6 +92,32 @@ line-height: 17px;
 color: var(--color--black-text);
 }
 .swiper {
-    width: 1136px;
-    height: 442px;
+width: 335px;
+}   
+  @media screen and (min-width: 1200px) {
+    .swiper {
+        width: 1136px;
+      }
+  }
+@media screen and (min-width: 768px) {
+    .swiper {
+        width: 736px;
+    }
+}
+.swiper-pagination-bullet {
+    background-color: var(--color--gray-text);
+    width: 13px;
+    height: 13px;
+ 
+}
+
+.swiper-pagination {
+    position: absolute;
+    
+}
+.swiper-pagination-bullet-active {
+    width: 28px;
+    height: 13px;
+    background-color: var(--color--brend);
+   
 }
