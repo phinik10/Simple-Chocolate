@@ -1,0 +1,77 @@
+<div class="modal modal-explore" data-modal="5">
+  <div class="conteiner-picture">
+    <picture>
+      <source
+        class="images-explore"
+        srcset="
+          ./images/modal-explore/chocolatemob.jpg 1x,
+          ./images/modal-explore/chocolatemob.jpg 2x
+        "
+        type="image/jpg"
+        media="(max-width:374px)"
+      />
+      <source
+        class="images-explore"
+        srcset="
+          ./images/modal-explore/chocolatedesc.jpg 1x,
+          ./images/modal-explore/chocolatedesc.jpg 2x
+        "
+        type="image/jpg"
+        media="(min-width:375px)"
+      />
+      <source
+        class="images-explore"
+        srcset="
+          ./images/modal-explore/chocolatemob.webp 1x,
+          ./images/modal-explore/chocolatemob.wepb 2x
+        "
+        type="image/webp"
+        media="(max-width:374px)"
+      />
+      <source
+        class="images-explore"
+        srcset="
+          ./images/modal-explore/chocolatedesc.wepb 1x,
+          ./images/modal-explore/chocolatedesc.wepb 2x
+        "
+        type="image/webp"
+        media="(min-width:375px)"
+      />
+      <img
+        class="images-explore"
+        src="./images/modal-explore/chocolatemob.jpg"
+        alt="chocolatemodal"
+      />
+    </picture>
+    <button
+      type="button"
+      class="close-modal-explore js-modal-close"
+      data-modal-close
+    >
+      <svg class="iconbutton" width="16" height="16">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="form-explore-conteiner">
+    <p class="title-explore">
+      EXPLORE OUR<br />
+      <span class="span-footer-paragraph">NEW CHOCOLATE</span> FIRST!
+    </p>
+    <form
+      class="explore-input-button"
+      name="subsccribe-form"
+      autocomplete="on"
+      novalidate
+    >
+      <input
+        class="input-footer"
+        type="email"
+        name="subscribe-user"
+        placeholder="Enter your email"
+        aria-label="email"
+      />
+      <button class="button-modal-explore" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
