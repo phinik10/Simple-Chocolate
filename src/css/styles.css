@@ -10,6 +10,7 @@
 @import url('./base/base_style.css');
 /* covponents */
 @import url('./components/vh.css');
+@import url('./components/button.css');
 /* section */
 @import url('./loyout/header.css');
 @import url('./loyout/hero.css');

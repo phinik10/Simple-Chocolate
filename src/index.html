@@ -6,59 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Chocolate</title>
     <!-- Нормалайз -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Шрифти -->
-      <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"> -->
 
-   <link rel="stylesheet" href="./css/styles.css" />
-   <!-- Слайдер -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-   
-   <link rel="icon" href="/src/public/favicon.svg#icon-chocolate" sizes="any" type="image/svg+xml"/>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Слайдер -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
 
+    <link
+      rel="icon"
+      href="/src/public/favicon.svg#icon-chocolate"
+      sizes="any"
+      type="image/svg+xml"
+    />
   </head>
   <body>
     <!------------------header -------------------->
     <load src="partials/header.html" />
-     <!------------------main -------------------->
+    <!------------------main -------------------->
     <main>
-       <!---------Hero --------->
-    <load src="partials/hero.html" />
-       <!---------Advantages --------->
-    <load src="partials/advantages.html" />
-       <!---------components--------->
-    <load src="partials/components.html" />
-       <!---------made--------->
-    <load src="partials/made.html" />
-       <!---------products--------->
-    <load src="partials/products.html" />
-       <!---------sellers--------->
-    <load src="partials/sellers.html" />
-       <!---------reviews--------->
-    <load src="partials/reviews.html" />
-       <!---------subscribe --------->
-    <load src="partials/subscribe.html" />
+      <!---------Hero --------->
+      <load src="partials/hero.html" />
+      <!---------Advantages --------->
+      <load src="partials/advantages.html" />
+      <!---------components--------->
+      <load src="partials/components.html" />
+      <!---------made--------->
+      <load src="partials/made.html" />
+      <!---------products--------->
+      <load src="partials/products.html" />
+      <!---------sellers--------->
+      <load src="partials/sellers.html" />
+      <!---------reviews--------->
+      <load src="partials/reviews.html" />
+      <!---------subscribe --------->
+      <load src="partials/subscribe.html" />
     </main>
 
     <!----------------------------footer------------------->
     <load src="partials/footer.html" />
-    
+
     <!------------------------ modal ---------------------->
-        <!---------buy--------->
+    <!---------buy--------->
     <load src="partials/modal/buy.html" />
-        <!---------thank you--------->
+    <!---------thank you--------->
     <load src="partials/modal/thank.html" />
-        <!---------Leave a review about our chocolate--------->
+    <!---------Leave a review about our chocolate--------->
     <load src="partials/modal/leave.html" />
-        <!---------Thank you for your feedback--------->
+    <!---------Thank you for your feedback--------->
     <load src="partials/modal/feedback.html" />
-        <!---------Explore our new chocolate first--------->
+    <!---------Explore our new chocolate first--------->
     <load src="partials/modal/explore.html" />
-  
+
+    <!-- Підложка під модальне вікно -->
+    <div class="overlay js-overlay-modal"></div>
+
     <script type="module" src="/main.js"></script>
     <!-- Слайдер -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>
