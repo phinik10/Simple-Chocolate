@@ -1,0 +1,226 @@
+@media screen and (max-width: 767px) {
+  .section-review {
+    padding: 72px 0;
+  }
+  .second-card {
+    display: none;
+  }
+  .third-card {
+    display: none;
+  }
+  .review-list {
+    margin-bottom: 65px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-review {
+    padding: 100px 0;
+  }
+  .third-card {
+    display: none;
+  }
+  .review-list {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 94px;
+  }
+  .review-item {
+    /*  flex-basis: calc((100% - 16px) / 2); */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .review-list {
+    display: flex;
+    gap: 28px;
+    margin-bottom: 94px;
+  }
+  .review-item {
+    flex-basis: calc((100% - 28px * 2) / 3);
+  }
+}
+
+/* Base */
+
+.section-review {
+  background-color: var(--color--bg);
+  text-align: center;
+}
+.card-box {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  height: 200px;
+  background-color: var(--color--white-text);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+  border-radius: 15px;
+  padding-top: 56px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 26px;
+}
+.img-review {
+  border-radius: 50%;
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  top: -20%;
+  left: 38%;
+}
+.title-review {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--color--brend);
+  margin-bottom: 91px;
+}
+.part-review-title {
+  color: var(--color--bg-card);
+}
+.text-review {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.286;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: rgba(17, 17, 17, 0.7);
+}
+.subtitle-rev {
+  margin-bottom: 24px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 0.75;
+  text-align: center;
+  color: var(--color--black-text);
+}
+.btn-review {
+  font-family: inherit;
+  background: transparent;
+  color: var(--color--black-text);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  border-radius: 100px;
+  border: 1px solid var(--color--brend);
+
+  font-weight: 00;
+  font-size: 18px;
+  line-height: 1.222;
+  letter-spacing: 0.04em;
+
+  padding: 14px 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-review:hover,
+.btn-review:focus {
+  background-color: var(--color--brend);
+  color: var(--color--white-text);
+}
+/* Modal */
+/* .modal-review { 
+ position: absolute; 
+ width: 100%; 
+ max-width: 517px; */
+/* 
+  padding: 40px;
+  background-color: var(--color--bg);
+  border-radius: 15px;
+}
+.close-modal-rev {
+  stroke: black;
+
+  position: absolute;
+  top: 24px;
+  right: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 28px;
+  height: 28px;
+
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+.modal-title-review {
+  /* width: 100%; */
+/* max-width: ;
+  margin-bottom: 40px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--color--black-text);
+}
+.part-mod-title {
+  color: var(--color--brend);
+}
+.form-review {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+.input-review {
+  width: 100%;
+  height: 66px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 10px;
+  padding: 8px 16px;
+  padding-left: 24px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.textarea-review {
+  resize: none;
+  width: 100%;
+  padding: 22px 24px;
+  height: 137px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 10px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.textarea-review::placeholder {
+}
+.btn-send-reveiw {
+  display: block;
+
+  font-family: inherit;
+  background-color: #fd9222;
+  color: var(--color--white-text);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  border-radius: 100px;
+  border: 1px solid transparent;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+
+  padding: 14px 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 117px;
+  height: 45px;
+}
+.btn-send-reveiw:hover,
+.btn-send-reveiw:focus {
+  background-color: var(--color--hover-brend);
+  color: var(--color--brend);
+} */
