@@ -113,14 +113,11 @@ ul {
 }
 
 .hero-btn {
-  font-style: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
   padding: 12px 28px;
   color: var(--white);
-  
   cursor: pointer;
 }
 
@@ -167,9 +164,11 @@ ul {
 }
 
 .scroll-icon {
-  width: 38px;
-  height: 38px;
-  fill: var(--white);
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  width: 28px;
+  height: 28px;
+  fill: #FD9222;
   stroke: #FD9222;
 }
 
@@ -178,4 +177,11 @@ ul {
   color: #FD9222;
   fill: #FD9222;
   stroke: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+  .scroll-icon {
+    width: 38px;
+    height: 38px;
+  }
 }
