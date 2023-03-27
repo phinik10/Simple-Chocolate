@@ -1,14 +1,4 @@
-/*--CSS var---*/
-:root {
-  --orange-background: #FD9222;
-  --black-background: #111111;
-  --dark-purple: #1E1823;
-  --white: #FFFFFF;
-  --beige-background: #FCF1E0;
-}
-
 /*----Hero----*/
-
 .hero {
   background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../../images/hero/chocolate-mobile.jpg);
   background-repeat: no-repeat;
@@ -20,7 +10,6 @@
   left: 0;
   top: 0;
   border-radius: 20px;
-
 }
 
 @media (min-width: 768px) {
@@ -72,7 +61,7 @@
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.03;
-  color: var(--white);
+  color: var(--color--white-text);
   width: 100%;
   max-width: 299px;
   margin-right: auto;
@@ -111,34 +100,36 @@
   font-size: 14px;
   line-height: 1.21;
   padding: 12px 28px;
-  color: var(--white);
+  color: var(--color--white-text);
   cursor: pointer;
+  transition: color 250ms var(--time-transition),
+    background-color 250ms var(--time-transition);
 }
 
 .buy-btn {
   border: none;
-  background-color: var(--orange-background);
+  background-color: var(--color--brend);
   border-radius: 100px;
 }
 
 .buy-btn:hover,
 .buy-btn:focus {
-  color: var(--orange-background);
-  background-color: var(--beige-background);
+  color: var(--color--brend);
+  background-color: var(--color--hover-brend);
 
 }
 
 .made-btn {
   background-color: transparent;
-  border-color: var(--white);
+  border-color: var(--color--white-text);
   border-radius: 100px;
 }
 
 .made-btn:hover,
 .made-btn:focus {
-  color: var(--orange-background);
-  border-color: var(--orange-background);
-  background-color: var(--white);
+  color: var(--color--brend);
+  border-color: var(--color--brend);
+  background-color: var(--color--white-text);
 }
 
 .scroll-btn {
@@ -154,24 +145,29 @@
   gap: 14px;
   outline: none;
   padding: 0;
+  cursor: pointer;
+  transition: color 250ms var(--time-transition),
+  background-color 250ms var(--time-transition);
 }
 .scroll-icon {
   border-radius: 50%;
   padding: 15px 12px;
-  background-color: var(--color--white-text);
+ background-color: var(--color--white-text);
   width: 28px;
   height: 28px;
   fill: var(--color--brend);
+  stroke: var(--color--brend);
 }
 
 .scroll-btn:hover,
 .scroll-btn:focus {
-  color: var(--color--brend);
-}
+ color: var(--color--brend);
+ }
+ 
 .scroll-btn:focus >.scroll-icon,
 .scroll-btn:hover >.scroll-icon{
-  fill: var(--color--white-text);
-  background-color: var(--color--brend);
+ fill: var(--color--white-text);
+ background-color: var(--color--brend);
 }
 
 @media (min-width: 768px) {
