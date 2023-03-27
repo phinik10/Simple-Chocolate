@@ -148,29 +148,30 @@
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.03em;
-  color: var(--white);
+  color: var(--color--white-text);
   background-color: transparent;
   border: none;
   gap: 14px;
   outline: none;
   padding: 0;
-  cursor: pointer;
 }
-
 .scroll-icon {
   border-radius: 50%;
-  background-color: #FFFFFF;
+  padding: 15px 12px;
+  background-color: var(--color--white-text);
   width: 28px;
   height: 28px;
-  fill: #FD9222;
-  stroke: #FD9222;
+  fill: var(--color--brend);
 }
 
 .scroll-btn:hover,
 .scroll-btn:focus {
-  color: #FD9222;
-  fill: #FD9222;
-  stroke: #FFFFFF;
+  color: var(--color--brend);
+}
+.scroll-btn:focus >.scroll-icon,
+.scroll-btn:hover >.scroll-icon{
+  fill: var(--color--white-text);
+  background-color: var(--color--brend);
 }
 
 @media (min-width: 768px) {
