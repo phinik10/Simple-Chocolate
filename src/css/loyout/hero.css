@@ -1,26 +1,6 @@
-/*--CSS var---*/
-:root {
-    --color--white-text:#FFFFFF;
-    --color--bg:#FAFAFA;
-    --color--black-text:#111111;
-    --color--gray-text: rgba(17,17,17,0.7);
-    --color--brend:#FD9222;
-    --color--hover-brend:#FCF1E0;
-    --color--bg-card:#1E1823;
-    --color--body:#E2E2E2;
-    --time-transition:cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
 /*----Hero----*/
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
 .hero {
-  background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/hero/chocolate-mobile.jpg);
+  background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../../images/hero/chocolate-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center ;
@@ -30,7 +10,6 @@ ul {
   left: 0;
   top: 0;
   border-radius: 20px;
-
 }
 
 @media (min-width: 768px) {
@@ -41,7 +20,7 @@ ul {
         padding-left: 40px;
         padding-top: 671px;
         padding-bottom: 40px;
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/hero/chocolate-tablet.jpg);
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../../images/hero/chocolate-tablet.jpg);
     }
 }
 
@@ -51,7 +30,7 @@ ul {
 (min-width: 768px) and (min-resolution: 2dppx)  {
     .hero {
        
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/hero/chocolate-tablet@2x.jpg);
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../../images/hero/chocolate-tablet@2x.jpg);
     }
 }
 
@@ -61,7 +40,7 @@ ul {
         padding-top: 381px;
         padding-bottom: 40px;
         max-width: 1136px;
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/hero/simply-chocolate.jpg);
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../../images/hero/simply-chocolate.jpg);
         
     }
 }
@@ -72,7 +51,7 @@ ul {
 (min-width: 1158px) and (min-resolution: 2dppx)  {
     .hero {
        
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/hero/simply-chocolate@2x.jpg);
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../../images/hero/simply-chocolate@2x.jpg);
     }
 }
 
@@ -160,7 +139,7 @@ ul {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.03em;
-  color: var(--white);
+  color: var(--color--white-text);
   background-color: transparent;
   border: none;
   gap: 14px;
@@ -168,12 +147,12 @@ ul {
   padding: 0;
   cursor: pointer;
   transition: color 250ms var(--time-transition),
-    background-color 250ms var(--time-transition);
+  background-color 250ms var(--time-transition);
 }
-
 .scroll-icon {
   border-radius: 50%;
-  background-color: var(--color--white-text);
+  padding: 15px 12px;
+ background-color: var(--color--white-text);
   width: 28px;
   height: 28px;
   fill: var(--color--brend);
@@ -182,9 +161,13 @@ ul {
 
 .scroll-btn:hover,
 .scroll-btn:focus {
-  color: var(--color--brend);
-  fill: var(--color--brend);
-  stroke: var(--color--white-text);
+ color: var(--color--brend);
+ }
+ 
+.scroll-btn:focus >.scroll-icon,
+.scroll-btn:hover >.scroll-icon{
+ fill: var(--color--white-text);
+ background-color: var(--color--brend);
 }
 
 @media (min-width: 768px) {
