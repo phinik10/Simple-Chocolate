@@ -123,6 +123,8 @@ ul {
   padding: 12px 28px;
   color: var(--color--white-text);
   cursor: pointer;
+  transition: color 250ms var(--time-transition),
+    background-color 250ms var(--time-transition);
 }
 
 .buy-btn {
@@ -146,7 +148,7 @@ ul {
 
 .made-btn:hover,
 .made-btn:focus {
-  color: var(--orange-background);
+  color: var(--color--brend);
   border-color: var(--color--brend);
   background-color: var(--color--white-text);
 }
@@ -165,6 +167,8 @@ ul {
   outline: none;
   padding: 0;
   cursor: pointer;
+  transition: color 250ms var(--time-transition),
+    background-color 250ms var(--time-transition);
 }
 
 .scroll-icon {
