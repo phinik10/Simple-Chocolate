@@ -9,14 +9,8 @@
 
 /*----Hero----*/
 
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
 .hero {
-  background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/hero/chocolate-mobile.jpg);
+  background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../../images/hero/chocolate-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center ;
@@ -37,7 +31,7 @@ ul {
         padding-left: 40px;
         padding-top: 671px;
         padding-bottom: 40px;
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/hero/chocolate-tablet.jpg);
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../../images/hero/chocolate-tablet.jpg);
     }
 }
 
@@ -47,7 +41,7 @@ ul {
 (min-width: 768px) and (min-resolution: 2dppx)  {
     .hero {
        
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/hero/chocolate-tablet@2x.jpg);
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../../images/hero/chocolate-tablet@2x.jpg);
     }
 }
 
@@ -57,7 +51,7 @@ ul {
         padding-top: 381px;
         padding-bottom: 40px;
         max-width: 1136px;
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/hero/simply-chocolate.jpg);
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../../images/hero/simply-chocolate.jpg);
         
     }
 }
@@ -68,7 +62,7 @@ ul {
 (min-width: 1158px) and (min-resolution: 2dppx)  {
     .hero {
        
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/hero/simply-chocolate@2x.jpg);
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../../images/hero/simply-chocolate@2x.jpg);
     }
 }
 
