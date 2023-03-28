@@ -1,8 +1,13 @@
 .produckts {
-    padding: 72px 20px;
+    padding: 45px 20px;
+    padding-top: 0;
     position: relative;
 }
-
+@media screen and (max-width: 768px) {
+    .produckts {
+        padding-top: 72px
+    }
+}
 
 .produckts-title {
     font-weight: 600;
