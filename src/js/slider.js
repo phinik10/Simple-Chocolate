@@ -1,6 +1,6 @@
 
  new Swiper ('.swiper', {
-  spaceBetween: 30,
+  spaceBetween: 0,
   grabCursor: true,
   pagination: {
     el: '.swiper-pagination',
