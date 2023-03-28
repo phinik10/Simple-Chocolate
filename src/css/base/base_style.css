@@ -16,7 +16,7 @@
     font-weight: 400;
     font-size: 0.875rem;
     color: var(--color--black-text);
-    background-color: var(--color--body);
+    background-color: var(--color--bg);
   }
 
   .conteiner{
