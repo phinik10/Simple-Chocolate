@@ -11,6 +11,11 @@
     border-radius: 15px;
     overflow: hidden;
 }
+.modal-thank.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
 .button-thank {
     display: block;
     position: absolute;
