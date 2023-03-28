@@ -1,7 +1,10 @@
 .section-advatages {
-    padding: 20px 0px 36px 0px;
+    padding: 0px 0px 36px 0px;
     margin-top: 72px;
     background-color: var(--color--bg-card);
+}
+.section-advatages-title {
+    visibility: hidden;
 }
 .advatages-item {
     margin: 0px 0px 20px 0px;
@@ -10,14 +13,14 @@
     margin-bottom: 0;
 }
 .advatages-title {
-    padding: 0px 0px 18px 0px;
+    margin: 0px 0px 18px 0px;
     font-weight: 600;
     font-size: 1.125rem;
     line-height: 1.22;
     color: var(--color--white-text);
 }
 .advatages-text {
-    width: 308px;
+    max-width: 308px;
     line-height: 1.21;
     letter-spacing: -0.02em;
     color: rgba(255, 255, 255, 0.7);
@@ -87,5 +90,4 @@
         top: 50%;
         left: 85%;
     }
-
   }
