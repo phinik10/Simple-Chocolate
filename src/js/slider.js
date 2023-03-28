@@ -5,6 +5,10 @@
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+   },
+   zoom: {
+     maxRatio: 1.5,
+     minRatio: 1,
   },
   breakpoints :{
     375 :{
