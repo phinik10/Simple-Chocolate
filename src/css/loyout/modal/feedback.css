@@ -1,0 +1,104 @@
+.modal-feedback {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    width: 311px;
+    height: 350px;
+    background: var(--color--brend);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.modal-thank.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+.button-feedback {
+    display: block;
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--color--hover-brend);
+    border: transparent;
+    cursor: pointer;
+}
+.close-feedback {
+    display: block;
+    width: 100%;
+    stroke: #F16529;
+}
+.paragraph-feedback {
+    width: 229px;
+    margin-left: 58px;
+    margin-top: 84px;
+}
+.title-feedback {
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--color--hover-brend);
+}
+.text-feedback {
+    width: 189px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: var(--color--hover-brend);
+}
+.modal-feedback > .feedback-icon {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 15px;
+}
+
+
+
+@media screen and (min-width:375px) {
+    .conteiner{
+      max-width:375px;
+    }
+  }
+  @media screen and (min-width:768px) {
+    .conteiner{
+      max-width: 768px;
+      padding: 0 32px;
+    }
+    .modal-feedback {
+        width: 516px;
+        height: 414px;
+    }
+    .button-feedback {
+        right: 26px;
+        top: 24px;
+        width: 40px;
+        height: 40px;
+    }
+    .paragraph-feedback {
+        width: 297px;
+        margin-left: 170px;
+        margin-top: 163px;
+    }
+    .title-feedback {
+        font-size: 1.5rem;
+        line-height: 1.17;
+    }
+    .text-feedback {
+        width: 297px;
+        font-size: 1.125rem;
+        line-height: 1.33;
+    }
+  }
+  @media screen and (min-width:1200px) {
+    .conteiner{
+      max-width: 1200px;
+    }
+  }
