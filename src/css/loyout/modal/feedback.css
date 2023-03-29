@@ -1,0 +1,107 @@
+.modal.feedback {
+  position: fixed;
+  padding: 84px 24px 178px 58px;
+  max-width: 311px;
+  max-height: 350px;
+
+  background-color: var(--color--brend);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.modal-close-button.feedback {
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  top: 14px;
+  right: 14px;
+  padding: 0;
+  margin: 0;
+
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--color--hover-brend);
+
+  cursor: pointer;
+}
+
+.modal-close-btn.feedback {
+  width: 16px;
+  height: 16px;
+  stroke: var(--color--brend);
+}
+
+.img-thanks {
+  position: absolute;
+  left: -108px;
+  top: 156px;
+  transform: rotate(-14deg);
+  z-index: 99991;
+}
+
+.title-modal-feedback {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--color--hover-brend);
+
+  margin-bottom: 8px;
+}
+
+.text-modal-feedback {
+  max-width: 170px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+
+  color: var(--color--white-text);
+}
+
+/*======================================================= */
+/*=========== Modal window for tablet / desctop ========= */
+/*======================================================= */
+
+@media screen and (min-width: 768px) {
+  .modal.feedback {
+    padding: 163px 49px 163px 170px;
+    max-width: 516px;
+    max-height: 414px;
+  }
+
+  .modal-close-button.feedback {
+    top: 24px;
+    right: 24px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .modal-close-btn.feedback {
+    width: 22px;
+    height: 22px;
+  }
+
+  .img-thanks {
+    left: -126px;
+    top: 144px;
+    transform: rotate(-7deg);
+  }
+
+  .title-modal-feedback {
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+  }
+
+  .text-modal-feedback {
+    font-size: 18px;
+    line-height: 1.17;
+  }
+}
