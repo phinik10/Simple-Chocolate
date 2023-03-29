@@ -1,17 +1,21 @@
 <div class="modal" data-modal="1">
-        <button type="button" class="modal-close-button js-modal-close">
-          <svg class="modal-close-btn">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
+  <button type="button" class="modal-close-button js-modal-close">
+    <svg class="modal-close-btn">
+      <use href="./images/icons.svg#icon-close"></use>
+    </svg>
+  </button>
 
-        <p class="title-modal-buy section-title">
-          <span class="color-title">BUY</span> NOW
-        </p>
+  <p class="title-modal-buy section-title">
+    <span class="color-title">BUY</span> NOW
+  </p>
 
-        <div class="order-box tablet">
-          <ul class="list order">
-            <li class="card-order">
+  <!-- SWIPER -->
+  <div class="body_swiper-buy">
+    <div class="swiper-buy">
+      <div class="swiper-wrapper order-box">
+        <div class="swiper-slide">
+          <div class="list order ull">
+            <div class="card-order lii">
               <img
                 srcset="
                   ./images/buy-now/chocolate.jpg 1x,
@@ -20,14 +24,18 @@
                 src="./images/buy-now/chocolate.jpg"
                 alt="chocolate pieces"
                 width="120"
-                class="img-order"
+                class="img-order swiper-buy-img"
               />
               <div class="set-content">
                 <p class="title-order">100 g</p>
               </div>
-            </li>
+            </div>
+          </div>
+        </div>
 
-            <li class="card-order order-none">
+        <div class="swiper-slide">
+          <div class="list order ull">
+            <div class="card-order lii">
               <img
                 srcset="
                   ./images/buy-now/chocolate-bar-dark.jpg 1x,
@@ -36,27 +44,32 @@
                 src="./images/buy-now/chocolate-bar-dark.jpg"
                 alt="chocolate dark"
                 width="120"
-                class="img-order"
+                class="img-order swiper-buy-img"
               />
               <div class="set-content">
                 <p class="title-order">100 g</p>
               </div>
-            </li>
+            </div>
+          </div>
+        </div>
 
-            <li class="card-order order-none">
+        <div class="swiper-slide">
+          <div class="list order ull">
+            <div class="card-order lii">
               <img
                 srcset="
                   ./images/buy-now/praline.jpg 1x,
-                  ./images/buy-now/praline@2x.jpg 2x
+                  ./images/buy-now/praline@2x.jpg  2x
                 "
                 src="./images/buy-now/praline.jpg"
                 alt="chocolate praline"
                 width="120"
-                class="img-order"
+                class="img-order swiper-buy-img"
               />
               <div class="set-content">
                 <p class="title-order">100 g</p>
               </div>
+
             </li>
           </ul>
         </div>
@@ -92,42 +105,54 @@
                 pattern="^[a-zA-Zа-яА-Я]+$"
                 minlength="2"
               />
-            </div>
-          </div>
 
-          <div class="form-field">
-            <label for="user_email" class="label-modal">Email</label>
-            <div class="wrapper-form-icons">
-              <input
-                type="email"
-                name="user_email"
-                id="user_email"
-                class="input-form"
-                required
-                placeholder="Enter your email"
-              />
             </div>
           </div>
+        </div>
+        
+    </div>
+    </div>
+    <!-- pagination -->
+    <div
+    class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal pagination-buy"
+  >
+    <span
+      class="swiper-pagination-bullet swiper-pagination-bullet-active"
+      aria-current="true"
+    ></span>
+    <span class="swiper-pagination-bullet"></span>
+    <span class="swiper-pagination-bullet"></span>
+    </div>
+</div>
 
-          <div class="form-field">
-            <label for="user_phone" class="label-modal">Phone number</label>
-            <div class="wrapper-form-icons">
-              <input
-                type="tel"
-                name="useer_phone"
-                id="user_phone"
-                class="input-form phone"
-                placeholder="Phone number"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                title="xxx-xxx-xx-xx"
-                required
-              />
-              <svg class="icons-form">
-                <use href="./images/icons.svg#icon-Frame"></use>
-              </svg>
-              <span class="code-tel">+380 </span>
-            </div>
-          </div>
+   
+
+  <form class="modal-form" name="buy-now_form" autocomplete="on" novalidate>
+    <div class="form-field">
+      <label for="user_name" class="label-modal">Personal information</label>
+      <div class="wrapper-form-icons">
+        <input
+          type="text"
+          name="useer_name"
+          id="user_name"
+          class="input-form"
+          placeholder="Name"
+          required
+          pattern="^[a-zA-Zа-яА-Я]+$"
+          minlength="2"
+        />
+        <input
+          type="text"
+          name="useer_sur-name"
+          id="user_name"
+          class="input-form"
+          placeholder="Surname"
+          required
+          pattern="^[a-zA-Zа-яА-Я]+$"
+          minlength="2"
+        />
+      </div>
+    </div>
 
           <div class="form-field">
             <label for="user_card" class="label-modal">Card number</label>
@@ -147,15 +172,60 @@
             </div>
           </div>
 
-          <div class="form-field-textarea">
-            <label for="user_comment" class="label-modal">Comment</label>
-            <textarea
-              name="useer_comment"
-              placeholder="Enter text"
-              id="user_comment"
-              class="comment-form"
-            ></textarea>
-          </div>
-          <button class="button primary btn-forme js-open-modal" data-modal="2" type="submit">Submit</button>
+    <div class="form-field">
+      <label for="user_phone" class="label-modal">Phone number</label>
+      <div class="wrapper-form-icons">
+        <input
+          type="tel"
+          name="useer_phone"
+          id="user_phone"
+          class="input-form phone"
+          placeholder="Phone number"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          title="xxx-xxx-xx-xx"
+          required
+        />
+        <svg class="icons-form">
+          <use href="./images/icons.svg#icon-Frame"></use>
+        </svg>
+        <span class="code-tel">+380 </span>
+      </div>
+    </div>
+
+    <div class="form-field">
+      <label for="user_card" class="label-modal">Card number</label>
+      <div class="wrapper-form-icons">
+        <input
+          type="number"
+          name="user_card"
+          id="user_card"
+          class="input-form card"
+          placeholder="Enter card"
+          pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+          title="xxxx-xxxx-xxxx-xxxx"
+          required
+        />
+        <svg class="icons-form-mastercard">
+          <use href="./images/icons.svg#icon-Mastercard"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="form-field-textarea">
+      <label for="user_comment" class="label-modal">Comment</label>
+      <textarea
+        name="useer_comment"
+        placeholder="Enter text"
+        id="user_comment"
+        class="comment-form"
+      ></textarea>
+    </div>
+    <button
+      class="button primary btn-forme js-open-modal"
+      data-modal="2"
+      type="submit"
+    >
+      Submit
+    </button>
   </form>
 </div>
