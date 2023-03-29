@@ -106,21 +106,21 @@ line-height: 17px;
 color: var(--color--black-text);
 }
 
-.swiper {
+.swiper.swiper-products {
     max-width: 335px;
 
 }   
 @media screen and (min-width: 768px) {
-    .swiper {
+    .swiper.swiper-products {
         max-width: 736px;
     }
 }
 @media screen and (min-width: 1200px) {
-    .swiper {
+    .swiper.swiper-products {
         max-width: 1136px;
       }
   }
-  .swiper-slide{
+  .swiper-slide.slide-products{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -133,8 +133,9 @@ color: var(--color--black-text);
     height: 13px;
  
 }
-.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal{
     position: absolute;
+    display: block;
     bottom: 0;
 }
 .swiper-pagination-bullet-active {
