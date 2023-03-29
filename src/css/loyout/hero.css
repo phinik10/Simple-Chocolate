@@ -1,7 +1,10 @@
 /*----Hero----*/
 .hero {
-  background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/hero/chocolate-mobile.jpg);
-  background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/hero/chocolate-mobile@2x.jpg);
+  background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), 
+  url(../../images/hero/chocolate-mobile.jpg);
+  background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), 
+  url(../../images/hero/chocolate-mobile@2x.jpg);
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center ;
@@ -22,7 +25,8 @@
         padding-left: 40px;
         padding-top: 671px;
         padding-bottom: 40px;
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/hero/chocolate-tablet.jpg);
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), 
+        url(../../images/hero/chocolate-tablet.jpg);
     }
 }
 
@@ -30,14 +34,15 @@
 (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
 (min-width: 768px) and (min-resolution: 192dpi),
 (min-width: 768px) and (min-resolution: 2dppx)  {
-    .hero {
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/hero/chocolate-tablet@2x.jpg);
+
+    .hero.conteiner 
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+        url(../../images/hero/chocolate-tablet@2x.jpg);
     }
 }
 
 @media (min-width: 1158px) {
     .hero.conteiner {
-        background-position: center;
         background-position: center;
         padding-top: 381px;
         padding-bottom: 40px;
@@ -97,6 +102,7 @@
 }
 
 .hero-btn {
+  display: block;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
@@ -121,8 +127,8 @@
 }
 
 .made-btn {
-  background-color: transparent;
-  border-color: var(--color--white-text);
+  padding: 12px 28px;
+  border-color: 1px solid var(--color--white-text);
   border-radius: 100px;
 }
 
