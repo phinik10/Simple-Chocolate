@@ -20,6 +20,7 @@
   .title-components {
     font-size: 20px;
     max-width: 283px;
+    width: 100%;
   }
 }
 .title-components-second {
@@ -40,6 +41,7 @@
 }
 @media (max-width: 767px) {
   .text-components {
+    width: 100%;
     max-width: 335px;
   }
 }
@@ -70,7 +72,8 @@
   color: var(--color--black-text);
 }
 .components-cards {
-  width: 270px;
+  max-width: 270px;
+  width: 100%;
   height: 270px;
   border: 1px solid #fd9222;
   border-radius: 15px;
