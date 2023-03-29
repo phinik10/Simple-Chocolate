@@ -97,6 +97,7 @@
 }
 
 .hero-btn {
+  display: block;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
@@ -121,8 +122,8 @@
 }
 
 .made-btn {
-  background-color: transparent;
-  border-color: var(--color--white-text);
+  padding: 12px 28px;
+  border-color: 1px solid var(--color--white-text);
   border-radius: 100px;
 }
 
