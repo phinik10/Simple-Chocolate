@@ -6,7 +6,7 @@
     clickable: true,
   },
   breakpoints :{
-    375 :{
+    0 :{
       slidesPerView: 1,
     },
     758 :{
