@@ -1,16 +1,23 @@
+.section.top-sellers{
+  padding-bottom: 0;
+}
 .conteiner.top-sellers {
   padding: 0px 20px;
   margin: 0 auto;
 }
-.section.top-sellers{
-  padding-bottom: 0;
-}
-
 .section-title {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.03em;
 
+  margin-bottom: 32px;
+}
+
+.item-top-sellers {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+ 
   margin-bottom: 32px;
 }
 
@@ -69,7 +76,9 @@
 
   .item-top-sellers {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 32px;
   }
 
   .text-top-sellers.list-hidden {
@@ -81,7 +90,7 @@
   }
 
   .img-top-sellers {
-    margin-bottom: 32px;
+    margin-bottom: 0px;
     max-width: 344px;
   }
 
