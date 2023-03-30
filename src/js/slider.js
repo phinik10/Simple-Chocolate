@@ -1,14 +1,9 @@
 
- new Swiper ('.swiper', {
-  spaceBetween: 18,
+ new Swiper ('.swiper-produckts', {
   grabCursor: true,
   pagination: {
-    el: '.pagination-products',
+    el: '.produckts-pagination',
     clickable: true,
-   },
-   zoom: {
-     maxRatio: 1.5,
-     minRatio: 1
   },
   breakpoints :{
     375 :{
@@ -32,9 +27,6 @@ new Swiper ('.swiper-buy', {
    },
   breakpoints :{
     375 :{
-      slidesPerView: 1,
-    },
-    758 :{
       slidesPerView: 1,
     },
     1200 :{
