@@ -126,6 +126,7 @@
 }
 
 .made-btn {
+  display: flex;
   background-color: transparent;
   border-color: var(--color--white-text);
   border-radius: 100px;
